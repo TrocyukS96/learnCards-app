@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/learnCards-app/static/css/main.c5bf1655.chunk.css",
+    "main.js": "/learnCards-app/static/js/main.2b92df3f.chunk.js",
+    "main.js.map": "/learnCards-app/static/js/main.2b92df3f.chunk.js.map",
+    "runtime-main.js": "/learnCards-app/static/js/runtime-main.c75ad48d.js",
+    "runtime-main.js.map": "/learnCards-app/static/js/runtime-main.c75ad48d.js.map",
+    "static/js/2.68ee800b.chunk.js": "/learnCards-app/static/js/2.68ee800b.chunk.js",
+    "static/js/2.68ee800b.chunk.js.map": "/learnCards-app/static/js/2.68ee800b.chunk.js.map",
+    "static/js/3.b7930a03.chunk.js": "/learnCards-app/static/js/3.b7930a03.chunk.js",
+    "static/js/3.b7930a03.chunk.js.map": "/learnCards-app/static/js/3.b7930a03.chunk.js.map",
+    "index.html": "/learnCards-app/index.html",
+    "static/css/main.c5bf1655.chunk.css.map": "/learnCards-app/static/css/main.c5bf1655.chunk.css.map",
+    "static/js/2.68ee800b.chunk.js.LICENSE.txt": "/learnCards-app/static/js/2.68ee800b.chunk.js.LICENSE.txt",
+    "static/media/oops.9d9ca53f.png": "/learnCards-app/static/media/oops.9d9ca53f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c75ad48d.js",
+    "static/js/2.68ee800b.chunk.js",
+    "static/css/main.c5bf1655.chunk.css",
+    "static/js/main.2b92df3f.chunk.js"
+  ]
+}
