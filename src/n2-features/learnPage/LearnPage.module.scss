@@ -1,0 +1,77 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
+.learnPageContainer {
+  background-color: $backgroundColorCard;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: space-evenly;
+
+  .questionBlock {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h4 {
+      @include h4Style();
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .buttonsBlock {
+      display: flex;
+      justify-content: space-around;
+
+      .cancelBtn {
+        @include BtnStyle(124px, 36px, $lightTextColor, $backgroundColor);
+      }
+
+      .saveBtn {
+        @include BtnStyle(124px, 36px, $backgroundColor, $lightTextColor);
+      }
+    }
+  }
+
+  .answerBlock {
+    width: 80%;
+    height: 390px;
+
+    h4 {
+      @include h4Style();
+    }
+
+    .ratingBox {
+      margin-top: 10px;
+      padding-bottom: 60px;
+    }
+
+    .answer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+
+      h4 {
+        @include h4Style();
+        margin-bottom: 0;
+      }
+    }
+
+    .buttonsBlock {
+      display: flex;
+      justify-content: space-between;
+
+      .cancelBtn {
+        @include BtnStyle(124px, 36px, $lightTextColor, $backgroundColor);
+      }
+
+      .saveBtn {
+        @include BtnStyle(124px, 36px, $backgroundColor, $lightTextColor);
+      }
+    }
+  }
+}

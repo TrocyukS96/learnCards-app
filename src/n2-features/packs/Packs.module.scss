@@ -1,0 +1,116 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+.packs {
+  @include commonProfilePacksContainerStyle();
+
+  .wrap {
+    @include commonProfilePacksBlockStyle();
+
+    .sidebar {
+      background-color: #ECECF9;
+      border-radius: 9px 0 0 9px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+      .btnTitle {
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        color: black;
+      }
+
+      .btnBox {
+        max-width: 12.25rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn {
+          height: 2.3rem;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          width: 100%;
+          background-color: white;
+          color: #000;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 70%;
+          }
+        }
+
+        .btnActive {
+          height: 2.3rem;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          width: 100%;
+          background-color: #9A91C8;
+          color: white;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 70%;
+          }
+        }
+      }
+
+      .inputTitle {
+        height: 2.3rem;
+        margin-top: 2.8rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+
+    .listBlock {
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      border-radius: 0 9px 9px 0;
+
+      .listTitle {
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+
+      .addPack {
+        width: 100%;
+        margin-top: .9rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 1rem;
+          height: 1rem;
+          background-image: url("./../../assets/images/icons/search-icon.png");
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 12px;
+          transform: translate(0, -50%);
+        }
+      }
+
+      .addBtn {
+        margin-left: 1.5rem;
+        width: 120px;
+        height: 100%;
+        font-weight: 500;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+        line-height: 19px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        background-color: #9A91C8;
+        color: #e3dfe5;
+      }
+    }
+  }
+}

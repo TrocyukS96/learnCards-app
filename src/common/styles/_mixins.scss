@@ -1,0 +1,84 @@
+@import "variables";
+
+@mixin commonCardStyles($width, $maxWidth, $height, $bg) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $maxWidth;
+  width: $width;
+  min-height: $height;
+  background-color: $bg;
+  padding: 25px 33px;
+  border-radius: 15px;
+}
+
+@mixin commonInputStyles {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 2px solid #DCDCDC;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin labelStyle() {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: 0.5;
+  color: $darkTextColor;
+}
+
+@mixin BtnStyle($width, $height, $bg, $color) {
+  background-color: $bg;
+  color: $color;
+  width: $width;
+  height: $height;
+  border-radius: 30px;
+  border: none;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+@mixin commonProfilePacksContainerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin commonProfilePacksBlockStyle {
+  margin-top: 2rem;
+  width: 80%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
+}
+
+@mixin h3Style {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: $darkTextColor;
+}
+
+@mixin h4Style {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $darkTextColor;
+}

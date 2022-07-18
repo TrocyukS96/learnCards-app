@@ -1,0 +1,72 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
+.registerBlock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 98vh;
+  color: $darkTextColor;
+  margin-top: 120px;
+
+  .registerCard {
+    @include commonCardStyles(100%, 413px, 540px, $backgroundColorCard);
+
+    .formBlock {
+      width: 350px;
+
+      .inputItem {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        border: none;
+        border-bottom: #F9F9FE;
+        font-size: small;
+        position: relative;
+
+        label {
+          text-align: left;
+          color: #C0C0C0;
+        }
+
+        input {
+          margin-top: 7px;
+
+          &::placeholder {
+            color: #9890c7;
+            font-size: 13px;
+          }
+        }
+
+        input[type="text"],
+        input[type="password"] {
+          @include commonInputStyles();
+        }
+      }
+
+      .buttonsBlock {
+        margin: 60px 0 20px 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 90px;
+        align-items: center;
+
+        button[type="submit"] {
+          @include BtnStyle(187px, 36px, $backgroundColor, #E5E5E5)
+        }
+
+        .cancel {
+          @include BtnStyle(124px, 36px, #E5E5E5, $backgroundColor)
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .registerBlock {
+    margin-top: 0;
+  }
+}

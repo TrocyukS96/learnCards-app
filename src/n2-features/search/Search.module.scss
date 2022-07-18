@@ -1,0 +1,50 @@
+@import '../../common/styles/mixins';
+@import '../../common/styles/variables';
+
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  position: relative;
+  height: 40px;
+
+  .inputSearchWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .inputSearch {
+      width: 100%;
+      height: 36px;
+      padding-left: 2.5rem;
+      border: 1px solid darkgrey;
+      background-color: #ECECF9;
+    }
+
+    &::before {
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      background-image: url("./../../assets/images/icons/search-icon.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .addBtn {
+    margin-left: 1.5rem;
+    width: 120px;
+    height: 100%;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+

@@ -1,0 +1,41 @@
+.passwordIcon{
+    position: absolute;
+    margin-top: -30px;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.error {
+    display: flex;
+    color: red;
+}
+
+
+
+
+//------------------
+
+.checkbox {
+    cursor: pointer;
+    width: 25px;
+}
+
+.input {
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.superInput {
+    border: 3px solid PaleTurquoise;
+    box-shadow: 5px 5px 15px MidnightBlue;
+}
+
+.errorInput {
+    border: 3px solid darkred;
+    background: pink;
+}
+
+

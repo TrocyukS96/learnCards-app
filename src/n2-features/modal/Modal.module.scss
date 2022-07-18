@@ -1,0 +1,120 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.35;
+  z-index: 20;
+}
+
+.modalMessage {
+  position: fixed;
+  z-index: 21;
+  padding: 0 24px;
+  box-sizing: border-box;
+  background: #fbfef9;
+  border-radius: 9px;
+
+  h3 {
+    margin: 15px 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2D2E46;
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background: #f0f6ed;
+
+    .info {
+      margin: 15px 0;
+    }
+  }
+
+  .input {
+    margin: 31px 0 36px;
+  }
+
+  .buttonBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+
+    button {
+      width: 124px;
+      height: 36px;
+      border-radius: 30px;
+      border: none;
+      letter-spacing: 0.01em;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .cancelBtn {
+      background-color: #e3dfe5;
+      color: #9A91C8;
+    }
+
+    .saveBtn {
+      background-color: #9A91C8;
+      color: #e3dfe5;
+    }
+
+    .delBtn {
+      background: #F1453D;
+      color: white;
+      box-shadow: 0 4px 18px rgba(241, 69, 61, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.info p {
+  margin: 0 0 10px 0;
+}
+
+.info p span:first-child {
+  font-weight: bold;
+}
+
+.modalMessage h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input input {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: darkblue;
+  border: none;
+  border-bottom: 2px solid #e3dfe5;
+  background: #fbfef9;
+  width: 100%;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.input h4 {
+  margin: 0;
+  color: #9A91C8;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.modalMessage button:hover, h3 img:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.paginator {
+  max-width: 100%;
+  margin: 2vh 0;
+
+  .paginatorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .pageContainer {
+      display: flex;
+
+      .paginatorBtn {
+        width: 3vw;
+        background-color: transparent;
+        border: none;
+      }
+
+      .paginatorBtn:hover {
+        background-color: #c8c5d9;
+        color: black;
+        font-weight: 700;
+      }
+
+      .pageNumbersBlock {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 1px;
+      }
+
+      .pageNumber {
+        min-width: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.2vw;
+        cursor: pointer;
+        padding: 1px;
+        border: 1px solid grey;
+        border-radius: 9px;
+        color: #21268F;
+      }
+
+      .pageNumber.selectedPage {
+        font-weight: bold;
+        border-color: #9A91C8;
+        background-color: #ECECF9;
+        color: #9A91C8;
+      }
+
+      .pageNumber:hover {
+        background-color: #c8c5d9;
+        color: #21268F;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #21268F;
+
+      .selectWrapper {
+        margin-left: 34px;
+        width: 27%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 180px;
+      }
+
+      select {
+        background: #FFFFFF;
+        border: 1px solid #EFF6D5;
+        width: 45px;
+        height: 24px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

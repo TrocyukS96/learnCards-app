@@ -1,0 +1,58 @@
+@import "../../common/styles/mixins";
+@import "../../common/styles/variables";
+
+.profileContainer {
+  @include commonProfilePacksContainerStyle();
+
+  .profileBlock {
+    @include commonProfilePacksBlockStyle();
+
+    .profileSidebar {
+      background-color: #ECECF9;
+      border-radius: 9px 0 0 9px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+      .profileInfo {
+        padding-top: 20px;
+        background-color: #e3dfe5;
+        //background-color: #D3D3D3;
+        border-radius: 9px 0 9px 9px;
+
+        img {
+          height: 170px;
+          width: 190px;
+          border-radius: 20%;
+        }
+
+        .verify {
+          color: green;
+          font-size: 20px;
+        }
+
+        .title {
+          margin-bottom: 20px;
+          margin-top: 10px;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 30px;
+        }
+
+        .userName {
+          font-size: 20px;
+        }
+      }
+
+      .cardsFilter {
+
+      }
+    }
+
+    .listBlock {
+      background-color: white;
+      border-radius: 0 9px 9px 0;
+      padding: 30px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+}
+

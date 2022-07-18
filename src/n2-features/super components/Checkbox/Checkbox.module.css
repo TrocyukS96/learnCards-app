@@ -1,0 +1,27 @@
+.checkboxContainer {
+    margin: 15px 0;
+}
+
+.checkbox {
+    display: none;
+}
+
+span.checkboxTick {
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border: 1px solid lightgray;
+    color:royalblue;
+}
+
+.checkbox:checked + span.checkboxTick:before {
+    content: '\2714';
+    position: absolute;
+    top: -4px;
+    left: 2px;
+}
+
+.checkboxText {
+    padding: 0 10px;
+}
